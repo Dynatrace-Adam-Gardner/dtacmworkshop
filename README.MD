@@ -14,8 +14,8 @@ The goal of this tutorial is having a full end-to-end DevOps Pipeline (Staging, 
 1. You will need to copy the contents of thie GitHub repo to your cloud shell instance
 
 ## What are we going to accomplish
-The workshop create a 3 node Kubernetes cluster on either GCP or AKS which will host a Dev and Production instance of our sample application, SockShop.  Using Jenkins we will build a pipeline to deploy new versions of our application.  In order to ensure we don't deploy builds that will impact our customers, we will integration Dynatrace Quality Gates to keep bad builds out of Production.
-We will then create a "self-healing" pipeline using Dynatrace and Ansible Tower.  If a bad build does make it's way into production or a feature-flag doesn't work as intended, Dynatrace will automatically detect this problem and trigger a remediation job via Ansible Tower.
+The workshop create a single node Kubernetes cluster on either GCP or AKS which will host a Dev and Production instance of our sample application, SockShop.  Using Jenkins we will build a pipeline to deploy new versions of our application.  In order to ensure we don't deploy builds that will impact our customers, we will integrate Dynatrace Quality Gates to keep bad builds out of Production.
+We will then create a "self-healing" pipeline using Dynatrace and Ansible Tower.  If a bad build does make its way into production or a feature-flag doesn't work as intended, Dynatrace will automatically detect this problem and trigger a remediation job via Ansible Tower.
 
 More detailed steps can be found in the [PowerPoint Deck with the repo](DynatraceACM.pptx).
 
